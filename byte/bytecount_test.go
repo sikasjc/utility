@@ -1,4 +1,4 @@
-// Package bytecount has some utility functions convert a size in bytes
+// Package byte has some utility functions convert a size in bytes
 // to human-readable string in either SI(decimal) or IEC(binary) format.
 //
 // Input         ByteCountSI        ByteCountIEC
@@ -12,7 +12,7 @@
 // Source:
 // https://yourbasic.org/golang/formatting-byte-size-to-human-readable-format/
 
-package bytecount
+package byte
 
 import (
 	"math"

@@ -16,7 +16,7 @@ package byte
 import "fmt"
 
 // SI convert a size in bytes to SI format
-func SI(b int64) string {
+func SI(b uint64) string {
 	const unit = 1000
 	if b < unit {
 		return fmt.Sprintf("%d B", b)
@@ -30,7 +30,7 @@ func SI(b int64) string {
 }
 
 // IEC convert a size in bytes to IEC format
-func IEC(b int64) string {
+func IEC(b uint64) string {
 	const unit = 1024
 	if b < unit {
 		return fmt.Sprintf("%d B", b)

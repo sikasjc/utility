@@ -12,7 +12,7 @@
 // Source:
 // https://yourbasic.org/golang/formatting-byte-size-to-human-readable-format/
 
-package byte
+package string
 
 import (
 	"math"
@@ -21,7 +21,7 @@ import (
 
 func TestSI(t *testing.T) {
 	type args struct {
-		b int64
+		b uint64
 	}
 	tests := []struct {
 		name string
@@ -70,7 +70,7 @@ func TestSI(t *testing.T) {
 
 func TestIEC(t *testing.T) {
 	type args struct {
-		b int64
+		b uint64
 	}
 	tests := []struct {
 		name string

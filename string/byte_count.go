@@ -11,7 +11,7 @@
 //
 // Source:
 // https://yourbasic.org/golang/formatting-byte-size-to-human-readable-format/
-package byte
+package string
 
 import "fmt"
 

@@ -2,15 +2,15 @@
 package time
 
 import (
-	"log"
+	"fmt"
 	"time"
 )
 
-// You can track the execution time of a complete function call with this one-liner,
-// which logs the result to the standard error stream.
 // example:
 // func foo() {
-//     defer Duration(Track("foo"))
+//     defer func(){
+//         fmt.Println(Duration(Track("foo")))
+//     }
 //     // Code to measure
 // }
 
@@ -20,6 +20,6 @@ func Track(msg string) (string, time.Time) {
 }
 
 // Duration computes the duration from start time
-func Duration(msg string, start time.Time) {
-	log.Printf("%v: %v\n", msg, time.Since(start))
+func Duration(msg string, start time.Time) string {
+	return fmt.Sprintf("%v: %v", msg, time.Since(start))
 }
